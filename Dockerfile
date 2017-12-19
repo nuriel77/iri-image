@@ -18,7 +18,7 @@ ENV REMOTE_API_LIMIT="attachToTangle, addNeighbors, removeNeighbors" \
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
 
 COPY docker-entrypoint.sh /
-RUN chmod +x /usr/bin/tini
+RUN chmod +x /usr/bin/tini /docker-entrypoint.sh
 
 COPY --from=base /iri/iri.jar /iri/target/iri.jar
 
