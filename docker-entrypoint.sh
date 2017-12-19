@@ -5,6 +5,6 @@ exec java \
   -Xms$INIT_MEMORY -Xmx$MAX_MEMORY \
   -Djava.net.preferIPv4Stack=true \
   -Dlogback.configurationFile=/iri/conf/logback.xml \
-  -jar /iri/target/iri.jar \
+  -jar /opt/iri/iri.jar \
   --config /iri/conf/iri.ini
   "$@"

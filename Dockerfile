@@ -20,7 +20,7 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/
 COPY docker-entrypoint.sh /
 RUN chmod +x /usr/bin/tini /docker-entrypoint.sh
 
-COPY --from=base /iri/iri.jar /iri/target/iri.jar
+COPY --from=base /iri/iri.jar /opt/iri/iri.jar
 
 EXPOSE ${API_PORT}
 EXPOSE ${UDP_PORT}/UDP
