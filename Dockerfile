@@ -9,9 +9,9 @@ ENV REMOTE_API_LIMIT="attachToTangle, addNeighbors, removeNeighbors" \
     API_PORT=14265 \
     UDP_PORT=14600 \
     TCP_PORT=15600 \
-    INIT_MEMORY=2G \
+    INIT_MEMORY=1G \
     MAX_MEMORY=4G \
-    IRI_CONFIG=/iri/iri.ini \
+    IRI_CONFIG=/iri/conf/iri.ini \
     JAVA_OPTIONS="-XX:+DisableAttachMechanism -XX:+HeapDumpOnOutOfMemoryError -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
 
 
