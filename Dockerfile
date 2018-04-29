@@ -14,7 +14,6 @@ ENV REMOTE_API_LIMIT="attachToTangle, addNeighbors, removeNeighbors" \
     IRI_CONFIG=/iri/conf/iri.ini \
     JAVA_OPTIONS="-XX:+DisableAttachMechanism -XX:+HeapDumpOnOutOfMemoryError -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
 
-
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
 
 COPY docker-entrypoint.sh /
